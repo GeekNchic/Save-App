@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#BFB1B1"
+    >
+<TableLayout 
+    android:id="@+id/details"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:stretchColumns="1"
+  >
+<TableRow >
+</TableRow>
+<TableRow >
+    <TextView android:text="Message:"/>
+    <EditText android:id="@+id/etMessageGot"
+        android:hint="Selected message..."
+        android:editable="false"
+        android:textStyle="italic"/>
+</TableRow>
+<TableRow >
+    <TextView android:text="Phones:"/>
+    <RadioGroup android:id="@+id/phones">
+        <RadioButton 
+            android:checked="true"
+            android:id="@+id/rbPhone1"
+            android:text="Phone 1"/>
+        <RadioButton 
+            android:id="@+id/rbPhone2"
+            android:text="Phone 2"/>
+        <RadioButton 
+            android:id="@+id/rbPhone3"
+            android:text="Phone 3"/>
+    </RadioGroup>
+</TableRow>
+    <Button
+        android:id="@+id/save"
+        android:text="Save pref"
+        android:onClick="execute"
+        android:layout_width="fill_parent"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:layout_height="wrap_content"
+        />
+    </TableLayout>
+<ListView
+    android:id="@+id/lvGotMessages"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_above="@id/details"
+    />
+</RelativeLayout>

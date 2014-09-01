@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#BFB1B1">
+
+    <EditText
+        android:id="@+id/etPhone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/TextView04"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:maxLength="9"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#000000"
+        android:ellipsize="end"
+        android:text="Click on Image to clear all records..."
+        android:textColor="#d0e3d9"
+        android:textSize="6.5pt"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/etPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etName2"
+        android:layout_alignBottom="@+id/etName2"
+        android:layout_alignLeft="@+id/etPhone1"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:maxLength="9"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/etPhone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etName3"
+        android:layout_alignBottom="@+id/etName3"
+        android:layout_alignLeft="@+id/etPhone2"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:maxLength="9"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_above="@+id/etName3"
+        android:layout_alignParentLeft="true"
+        android:text="Phone 3:" />
+
+    <EditText
+        android:id="@+id/etName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView02"
+        android:layout_alignRight="@+id/etName3"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Name 2"
+        android:inputType="textPersonName"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_above="@+id/etName2"
+        android:layout_alignParentLeft="true"
+        android:text="Phone 2:" />
+
+    <EditText
+        android:id="@+id/etName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/etName2"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Name 1"
+        android:inputType="textPersonName"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etName1"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:text="Phone 1:" />
+
+    <EditText
+        android:id="@+id/etName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bSave"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="32dp"
+        android:layout_toLeftOf="@+id/EditTe"
+        android:ems="10"
+        android:hint="Name 3"
+        android:inputType="textPersonName"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/bSave"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@android:drawable/ic_input_get"
+        android:layout_marginBottom="30dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/EditTe"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etPhone3"
+        android:gravity="right"
+        android:layout_alignBottom="@+id/etPhone3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:ems="10"
+        android:hint="+254"
+        android:inputType="textPersonName"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etPhone2"
+        android:layout_alignBottom="@+id/etPhone2"
+        android:textStyle="italic"
+        android:gravity="right"
+        android:layout_alignLeft="@+id/EditTe"
+        android:ems="10"
+        android:hint="+254"
+        android:inputType="textPersonName"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etPhone1"
+        android:layout_alignBottom="@+id/etPhone1"
+        android:layout_toRightOf="@+id/etName2"
+        android:textStyle="italic"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="+254"
+        android:inputType="textPersonName"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/tvTutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:text="Enter the three emergency contacts then save them"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivC"
+        android:layout_alignRight="@+id/bSave"
+        android:text="Contacts"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/ivC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bSave"
+        android:layout_alignParentTop="true"
+        android:onClick="clearAll"
+        android:src="@drawable/c" />
+
+</RelativeLayout>

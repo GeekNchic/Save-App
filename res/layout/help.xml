@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#BFB1B1">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="98dp"
+        android:src="@drawable/h" />
+
+    <TextView
+        android:id="@+id/tvSaveHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvHelp"
+        android:layout_marginTop="23dp"
+        android:text="To use saveapp you need to first set up your emergency contacts by clicking on Create Custom Contacts from the spanner icon, then predefine an emergency message from the Create Custom Message on clicking on the spanner icon\n you then need to select the message and contact to send the emergency message to from Menu then Settings."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/batman" />
+    <TextView
+        android:id="@+id/tvBriefing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#929292"
+        android:ellipsize="end"
+        android:text="Brutecode (c) 2014"
+        android:textColor="#d0e3d9"
+        android:textSize="6.5pt"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Help"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
